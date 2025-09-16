@@ -1,5 +1,5 @@
 
-<!-- Your monitor number = #$34T# -->
+<!-- Your monitor number = 32 -->
 
 
 ## ⛅ Warm Up for Day 2.
@@ -18,12 +18,12 @@ Verify:
 
 ~~~cmd
 @cmd
-ping 10.#$34T#.1.10             PC Network Adapter
-ping 10.#$34T#.1.2		    CoreTAAS
-ping 10.#$34T#.1.4		    CoreBABA
-ping 10.#$34T#.100.8		CUCM
-ping 10.#$34T#.#$34T#.1		EDGE - INSIDE
-ping 200.0.0.#$34T#		    EDGE - OUTSIDE
+ping 10.32.1.10             PC Network Adapter
+ping 10.32.1.2		    CoreTAAS
+ping 10.32.1.4		    CoreBABA
+ping 10.32.100.8		CUCM
+ping 10.32.32.1		EDGE - INSIDE
+ping 200.0.0.32		    EDGE - OUTSIDE
 
 ping 200.0.0.k		        Klassmate's EDGE	       k = klassmate's Monitor Number
 ping 10.k.100.8		        Klassmate's CUCM
@@ -37,26 +37,26 @@ Your Branch must be able to call other klassmates
 <br>
 
 View your cameras:
-  - http://10.#$34T#.50.6
-  - http://10.#$34T#.50.8
+  - http://10.32.50.6
+  - http://10.32.50.8
 
 &nbsp;
 ---
 &nbsp;
 
 ### 🌐 Configure DNS
-  - Create __DNS zones & records__ for daytwo#$34T#.com  
-  - Create a __website__ for daytwo#$34T#.com  
+  - Create __DNS zones & records__ for daytwo32.com  
+  - Create a __website__ for daytwo32.com  
   - Create an __email__ for
 
 | Email                       | Name           |
 | ---                         | ---            |
-| support@daytwo#$34T#.com    | Rivan Support  |
-| user1@daytwo#$34T#.com      | User1          |
+| support@daytwo32.com    | Rivan Support  |
+| user1@daytwo32.com      | User1          |
 
 <br>
 
-Send an email from support@daytwo#$34T#.com to user1@daytwo#$34T#.com
+Send an email from support@daytwo32.com to user1@daytwo32.com
 
 <br>
 <br>
@@ -572,8 +572,8 @@ config t
   network __.__.__.__  __.__.__.__
   default-router __.__.__.__
   domain-name _____.com
-  dns-server 10.#$34T#.1.10
-  option 150 ip 10.#$34T#.100.8
+  dns-server 10.32.1.10
+  option 150 ip 10.32.100.8
  int fa 0/5
   switchport voice vlan 25
   shut
@@ -749,6 +749,7 @@ Offices:
 &nbsp;
 
 ![ValidRangeRST](img/ValidRange.png)
+
 
 
 
